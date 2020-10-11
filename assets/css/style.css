@@ -6,6 +6,7 @@
 
 body {
     font-family: 'Montserrat', sans-serif;
+    overflow-x: hidden;
 }
 
 header{
@@ -17,11 +18,14 @@ header{
 }
 
 .container {
-    min-width: 90%;
+    width: 90%;
     max-width: 1440px;
-    height: 100px;
-    display: flex;
     align-items: center;
+    display: flex;
+}
+
+header .container {
+    height: 100px;
 }
 
 .logo{
@@ -116,7 +120,7 @@ header{
     margin-top: 20px;
 }
 
-.banner .slidearea a{
+.button{
     display: block;
     background-color: #B28756;
     text-decoration: none;
@@ -151,4 +155,83 @@ header{
 
 .banner .pointer.active{
     background-color: #B28756;
+}
+
+.default {
+    padding: 50px 0 50px 0;
+    background-color: red;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.default .sectionTitle,
+.default .sectionDesc {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 600;
+}
+
+.default .sectionTitle{
+    font-size: 20px;
+}
+
+.default .sectionDesc{
+    font-size: 10px;
+    padding-top: 10px;
+    margin-bottom: 40px;
+    color: #9e9e9e
+}
+
+.default.lightBg .sectionTitle,
+.default.lightBg .sectionBody{
+    color: #000;
+}
+
+.lightBg {
+    background-color: #f6f6f6;
+}
+
+.darkBg{
+    background-color: #000;
+}
+
+.default.darkBg .sectionTitle,
+.default.darkBg .sectionBody{
+    color: #FFF;
+}
+
+.default .container {
+    justify-content: center;
+}
+
+
+
+/*Specifics*/
+
+.sectionBody {
+    display: flex;
+    width: 100%;
+    font-size: 10px;
+}
+
+.aboutUs--Left{
+    flex: 1;
+    text-align: justify;
+    line-height: 18px;
+}
+
+.aboutUs--Right{
+    width: 40%;
+    padding-left: 20px;
+    text-align: center;
+}
+
+.aboutUs--Left a{
+    display: inline-block;
+}
+
+.aboutUs--Right img{
+    width: 100%;
+    box-shadow: 0px 4px 10px #333;
 }
