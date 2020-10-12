@@ -198,6 +198,12 @@ header .container {
     background-color: #000;
 }
 
+.lighterBg{
+    background-color: #FFF;
+    border-top: 2px solid #d2d2d2;
+    border-bottom: 2px solid #d2d2d2;
+}
+
 .default.darkBg .sectionTitle,
 .default.darkBg .sectionBody{
     color: #FFF;
@@ -473,3 +479,74 @@ header .container {
 .teamSocial a:hover{
     background-color: #B28756;
 }
+
+/*Clients*/
+
+.sectionClientBody,
+.sectionClientBody .slide{
+    width: 100%;
+}
+
+.sectionClientBody .slide{
+    display: flex;
+    overflow-x: hidden;
+    text-align: center;
+}
+
+.sectionClientBody .slidearea{
+    min-width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.clientAvatar{
+    height: 120px;
+    margin-bottom: 30px;
+}
+
+.clientName{
+    font-weight: 600;
+}
+
+.clientRole{
+    font-weight: 400;
+    margin-top: 5px;
+    margin-bottom: 30px;
+}
+
+.sectionClientBody .quote{
+    margin-bottom: 30px;
+}
+
+.sectionClientBody .sliders{
+    margin-bottom: 40px;
+}
+
+.sectionClientBody p{
+    font-size: 11px;
+    width: 60%;
+    line-height: 20px;
+}
+
+
+.sectionClientBody .sliderPointer{
+    height: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.sectionClientBody .pointer {
+    height: 12px;
+    width: 12px;
+    border: 2px solid #B28756;
+    border-radius: 50%;
+    margin: 0 5px 0 5px;
+    cursor: pointer;
+}
+
+.sectionClientBody .pointer.active{
+    background-color: #B28756;
+}
+
