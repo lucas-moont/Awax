@@ -550,3 +550,19 @@ header .container {
     background-color: #B28756;
 }
 
+/*Award section*/
+
+.awardSection{
+    padding: 10px;
+}
+
+.awardSectionBody{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.awardSectionBody img{
+    margin: 20px 20px;
+}
