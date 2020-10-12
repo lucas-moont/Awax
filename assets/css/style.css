@@ -191,7 +191,7 @@ header .container {
 }
 
 .lightBg {
-    background-color: #f6f6f6;
+    background-color: #ededed;
 }
 
 .darkBg{
@@ -565,4 +565,64 @@ header .container {
 
 .awardSectionBody img{
     margin: 20px 20px;
+}
+
+/*Price section*/
+
+.price {
+    width: 200px;
+    height: 300px;
+    background-color: #FFF;
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.priceSection .sectionBody{
+    align-items: center;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.price h4{
+    font-size:14px;
+    font-weight: 400;
+    margin-bottom: 10px;
+}
+
+.price h1{
+    font-size: 22px;
+    margin-bottom: 10px;
+}
+
+.price h5{
+    font-size: 10px;
+    color: #aeaeae;
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+
+.price h1,
+.price h4,
+.price h5,
+.price .button{
+    text-transform: uppercase;
+}
+
+.trace{
+    height: 0.5px;
+    width: 8px;
+    background: #000;
+    margin: 10px 0;
+}
+
+.price .button{
+    padding: 12px 30px;
+    background-color: #373737;
+}
+
+.price .button:hover{
+    background-color: #B28756;
 }
