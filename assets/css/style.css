@@ -132,6 +132,7 @@ header .container {
     margin-top: 20px;
     border-radius: 30px;
     font-size: 10px;
+    text-transform: uppercase;
     font-weight: 600;
 }
 
@@ -210,6 +211,20 @@ header .container {
 
 .default .container {
     justify-content: center;
+}
+
+input, textarea {
+    border: none;
+    background-color: transparent;
+}
+
+input::placeholder,
+textarea::placeholder{
+    text-transform: uppercase;
+}
+
+textarea{
+    resize: none;
 }
 
 
@@ -626,6 +641,7 @@ header .container {
 .price .button{
     padding: 12px 30px;
     background-color: #373737;
+    transition: 0.2s;
 }
 
 .price .button:hover{
@@ -848,6 +864,75 @@ header .container {
     background-color: #e64238;
 }
 
-.pinteres{
+.pinterest{
     background-color: #b91b2a;
 }
+
+/* CONTACT US */
+
+.contactUs form{
+    width: 55%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+
+.contactUs input,
+.contactUs textarea{
+    width: 100%;
+    border: 2px solid transparent;
+    border-bottom: 2px solid #aeaeae;
+    margin: 0 20px 40px;
+    padding-bottom: 10px;
+    color: #9f9f9f;
+}
+
+.contactUs input:focus,
+.contactUs textarea:focus{  
+    outline: none;
+    
+}
+
+.contactUs textarea{
+    height: 100px;
+    display: flex;
+    align-items: flex-end;
+}
+
+.contactUs input:first-child,
+.contactUs input:nth-child(2){
+    width: 40%
+}
+
+.contactUs input::placeholder,
+.contactUs textarea::placeholder{
+    color: #9f9f9f
+}
+
+.contactUs input::placeholder{
+    font-size: 12px;
+}
+
+.contactUs textarea::placeholder{
+    font-size: 14px;
+    transform:translateY(calc(100px - 30px))
+}
+
+.contactUs textarea:focus::placeholder{
+    color: #ededed;
+}
+
+.contactUs button{
+    margin: 40px auto 0; 
+    text-transform: uppercase;
+    color: white;
+    font-weight: 700;
+    border: none;  
+    padding: 12px 35px;
+    background-color: #B28756;
+    border-radius: 30px;
+    font-size: 12px;
+}
+
+/* LEMBRAR DE AJUSTAR O SOME FACTS PARA O CENTRO */
