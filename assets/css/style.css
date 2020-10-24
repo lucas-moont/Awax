@@ -770,7 +770,7 @@ textarea{
     display: flex;
     color: white;
     flex-wrap: wrap;
-    justify-content: space-between;
+    justify-content: center;
 }
 
 .fact{
@@ -936,3 +936,93 @@ textarea{
 }
 
 /* LEMBRAR DE AJUSTAR O SOME FACTS PARA O CENTRO */
+
+/* footer */
+
+footer{
+    background-color: #000;
+    position: relative;
+    color: #FFF;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    padding: 20px;
+    font-size: 10px;
+}
+
+footer .top{
+    padding: 5px 15px;
+    font-size: 30px;
+    border-radius: 50%;
+    position: absolute;
+    top: -29px;
+    left: 25px;
+}
+
+.top img{
+    width: 50px;
+    background-color: #B28756;
+    border-radius: 50%;
+}
+
+.footerContainer{
+    width: 80%;
+    display: flex;
+    height: 100px;
+
+}
+
+.footerContainer p{
+    margin-top: auto;
+}
+
+.footerMedia{
+    display: flex;
+    flex-direction: column;
+}
+
+.footerMedia div{
+    display: flex;
+}
+
+.footerMedia a{
+    padding: 5px;
+    background-color: #383838;
+    border-radius: 50%;
+    margin: 0 3px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.instagram{
+    width: 18px;
+    height: 18px;
+}
+
+.youtube{
+    width: 15px;
+    height: 10px;
+}
+
+.footerMedia .footerPinterest{ /*corrigindo o icon do pinterest com padding errado devido tamanho da imagem*/
+    padding: 5px 7px;
+}
+
+.footerMedia .footerFacebook{ /*corrigindo o icon do facebook com padding errado devido tamanho da imagem*/
+    padding: 5px 9px;
+}
+
+.footerMedia a:hover{
+    background-color: #B28756;
+}
+
+.footerMedia p{
+    font-weight: 600;
+    text-transform: uppercase;
+    font-size: 12px;
+}
+
+.footerMedia a:first-child{
+    margin-left: 0;
+}
