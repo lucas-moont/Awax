@@ -4,10 +4,14 @@
     padding: 0;
 }
 
+html{
+    overflow-x: hidden;
+}
+
 body {
     font-family: 'Montserrat', sans-serif;
     overflow-x: hidden;
-    background-color: red;
+    overflow: hidden;
     width: 100vw;
 }
 
@@ -47,6 +51,10 @@ header .container {
     align-items: center;
     justify-content: center;
     font-size: 12px;
+}
+
+.menuMobile{
+    display: none;
 }
 
 .menu ul,
@@ -99,7 +107,7 @@ header .container {
     background-color: rgba(0, 0, 0, 0.8);
 }
 
-.banner .slidearea{
+.banner .sliderarea{
     display: flex;
     height: 100%;
     flex-direction: column;
@@ -110,15 +118,15 @@ header .container {
     text-transform: uppercase;
 }
 
-.banner .slidearea h1{
+.banner .sliderarea h1{
     font-size: 48px;
 }
 
-.banner .slidearea h1:nth-child(2){
+.banner .sliderarea h1:nth-child(2){
     color: #B28756;
 }
 
-.banner .slidearea h2{
+.banner .sliderarea h2{
     margin-top: 20px;
 }
 
@@ -312,6 +320,7 @@ textarea{
     padding-top: 5px;
     border: 1px solid #c0bebe;
     border-radius: 30px;
+    flex-wrap: wrap;
 }
 
 .projectsFilters ul li {
@@ -427,7 +436,7 @@ textarea{
     margin: 20px;
 }
 
-.sectionTeam .slidearea{
+.sectionTeam .sliderarea{
     display: flex;
     height: 100%;
     flex-direction: column;
@@ -513,7 +522,7 @@ textarea{
     min-width: 100%;
 }
 
-.sectionClientBody .slidearea{
+.sectionClientBody .sliderarea{
     min-width: 100%;
     display: flex;
     flex-direction: column;
@@ -671,7 +680,7 @@ textarea{
     min-width: 100%;
 }
 
-.features .slidearea{
+.features .sliderarea{
     min-width: 100%;
     display: flex;
     flex-direction: column;
@@ -1015,7 +1024,7 @@ footer .top{
 
 .footerContainer div{
     width: 25%;
-    margin: 0 30px;
+    margin: 20px 30px;
 }
 
 .footerContainer p{
@@ -1031,38 +1040,27 @@ footer .top{
 .footerMedia div{
     display: flex;
     margin-left: 0;
+    margin-top: 0;
+    width: 100%;
+    flex-wrap: wrap;
 }
 
 .footerMedia a{
     padding: 5px;
     background-color: #383838;
     border-radius: 50%;
-    margin: 0 3px;
+    margin-right: 5px;
+    margin-top: 5px;
     display: flex;
     justify-content: center;
     align-items: center;
+    height: 30px;
+    width: 30px;
 }
 
-.footerMedia .instagram{
-    width: 18px;
-    height: 18px;
-}
 
-.footerMedia .linkedin{ /*corrigindo o icon do pinterest com padding errado devido tamanho da imagem*/
-    padding: 5px 7px;
-}
-
-.footerMedia .youtube{
-    width: 15px;
-    height: 10px;
-}
-
-.footerMedia .footerPinterest{ /*corrigindo o icon do pinterest com padding errado devido tamanho da imagem*/
-    padding: 5px 7px;
-}
-
-.footerMedia .footerFacebook{ /*corrigindo o icon do facebook com padding errado devido tamanho da imagem*/
-    padding: 5px 9px;
+.footerMedia img{
+    max-height: 15px;
 }
 
 .footerMedia a:hover{
@@ -1087,7 +1085,8 @@ footer .top{
 
 .footerContainer div:last-child{
     background-color: #373737;
-    padding: 30px;
+    min-width: 250px;
+    padding: 20px;
 }
 
 .footerContainer form{
@@ -1095,13 +1094,14 @@ footer .top{
     justify-content: center;
     align-items: center;
     flex-direction: column;
+    height: 100%;
 }
 
 .footerContainer input{
     padding-bottom: 10px;
     border-bottom: 2px solid #aeaeae;
     color: #9f9f9f;
-    width: 80%;
+    width: 100%;
 }
 
 .footerContainer input::placeholder{
@@ -1126,4 +1126,167 @@ footer .top{
     border: none;
     font-weight: 600;
     border-radius: 30px;
+}
+
+/* responsividade tablet */
+
+@media (min-width: 450px) and (max-width: 800px){
+    nav{
+        display: none;
+        position: absolute;
+        z-index: 99;
+        background-color: rgba(0, 0, 0, 0.9);
+        width: 60vw;
+        height: calc(100vh - 100px);
+        top: 100px;
+        right: 0;
+    }    
+
+    nav ul{
+        flex-direction: column;
+    }
+
+    .menu li a{
+        font-size: 14px;
+        height: auto;
+        padding-left: 10px;
+        height: 45px;
+        border-bottom: 5px solid transparent
+    }
+
+    .menu li a.active,
+    .menu li a:hover{
+        border-bottom: 5px solid transparent;
+        color: #B28756;
+    }
+
+    .menuMobile{
+        display: block;
+    }
+
+    .aboutUs{
+        flex-direction: column;
+    }
+
+    .aboutUs--Right{
+        margin-top: 30px;
+        padding-left: 0;
+        width: 100%;
+    }
+
+    .service:first-child{
+        border: 0;
+    }
+
+    .service{
+        min-width: 50%;
+        border: 0;
+    }
+
+
+    .sectionTeam{
+        max-width: 520px;
+    }
+
+    .map-area{
+        width: auto;
+    }
+
+    .map-info{
+        width: auto;
+    }
+}
+
+/*responsividade: celular*/
+
+@media (max-width: 450px){
+    nav{
+        display: none;
+        position: absolute;
+        z-index: 99;
+        background-color: rgba(0, 0, 0, 0.9);
+        width: 60vw;
+        height: calc(100vh - 100px);
+        top: 100px;
+        right: 0;
+    }    
+
+    nav ul{
+        flex-direction: column;
+    }
+
+    .menu li a{
+        font-size: 14px;
+        height: auto;
+        padding-left: 10px;
+        height: 45px;
+        border-bottom: 5px solid transparent
+    }
+
+    .menu li a.active,
+    .menu li a:hover{
+        border-bottom: 5px solid transparent;
+        color: #B28756;
+    }
+
+    .menuMobile{
+        display: block;
+    }
+
+    .banner .sliderarea h1 {
+        font-size: max(7vw, 18px);
+    }
+
+    .banner .sliderarea h2{
+        font-size: max(5vw, 12px);
+    }
+
+    .banner .sliderarea .button{
+        font-size: max(2vw, 10px);
+    }
+
+    .aboutUs{
+        flex-direction: column;
+    }
+
+    .aboutUs--Right{
+        margin-top: 30px;
+        padding-left: 0;
+        width: 100%;
+    }
+
+    .service:first-child{
+        border: 0;
+    }
+
+    .service{
+        min-width: 50%;
+        border: 0;
+    }
+
+
+    .sectionTeam{
+        max-width: 260px;
+    }
+
+    #map{
+        padding: 0;
+        padding-bottom: 200px;
+    }
+
+    .map-area{
+        width: auto;
+    }
+
+    .map-info{
+        width: auto;
+    }
+
+    .sectionProjectsPhoto {
+        width: 240px;
+    }
+
+    .projectsPhotoArea {
+        width: 220px;
+    }
 }
