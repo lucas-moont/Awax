@@ -688,21 +688,24 @@ textarea{
 }
 
 
-.fatures .sliderarea .sectionBody{
+.features .sliderarea .sectionBody{
     display: flex;
+    flex-wrap: wrap;
 }
 
 .features--Left{
-    flex: 1;
+    flex: 1 1 400px;
     padding: 20px;
 }
 
 .features--Left img{
-    width: 70%;
-    max-width: auto;
+    margin: 20px 0;
+    max-width: 70%;
+    width: 100%;
 }
 .features--Right{
-    width: 50%;
+    flex: 1 1 400px;
+    margin: 20px 0;
     padding: 20px;
     display: flex;
     flex-direction: column;
@@ -1023,7 +1026,7 @@ footer .top{
 }
 
 .footerContainer div{
-    width: 25%;
+    flex: 1 1 150px;
     margin: 20px 30px;
 }
 
@@ -1043,6 +1046,7 @@ footer .top{
     margin-top: 0;
     width: 100%;
     flex-wrap: wrap;
+    flex: 0
 }
 
 .footerMedia a{
@@ -1188,6 +1192,16 @@ footer .top{
         max-width: 520px;
     }
 
+    .features .sliderarea .sectionBody{
+        flex-direction: column;
+    }
+
+    .features--Left,
+    .features--Right{
+        width: 100%;
+        flex: 0;
+    }
+
     .map-area{
         width: auto;
     }
@@ -1243,6 +1257,10 @@ footer .top{
 
     .banner .sliderarea .button{
         font-size: max(2vw, 10px);
+    }
+
+    .features .sliderarea .sectionBody{
+        flex-direction: column;
     }
 
     .aboutUs{
