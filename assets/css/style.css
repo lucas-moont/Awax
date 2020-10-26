@@ -851,6 +851,10 @@ textarea{
     width: 28px;
 }
 
+.tellAboutUsSect{
+    padding: 10px;
+}
+
 .tellAboutUs span{
     font-size: 12px;
     margin-right: 40px;
@@ -883,7 +887,7 @@ textarea{
 /* CONTACT US */
 
 .contactUs form{
-    width: 55%;
+    width: 60%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -914,7 +918,7 @@ textarea{
 
 .contactUs input:first-child,
 .contactUs input:nth-child(2){
-    width: 40%
+    flex: 1 1 200px;
 }
 
 .contactUs input::placeholder,
@@ -1187,7 +1191,6 @@ footer .top{
         border: 0;
     }
 
-
     .sectionTeam{
         max-width: 520px;
     }
@@ -1201,6 +1204,22 @@ footer .top{
     .features--Right{
         width: 90%;
         flex: 0;
+    }
+
+    .tellAboutUs div:first-child{
+        margin-right: 30px;
+    }
+
+    .tellAboutUs div:first-child span {
+        display: none;
+    }
+
+    .tellAboutUs span {
+        margin-right: 10px;
+    }
+
+    .contactUs form{
+        width: 80%;
     }
 
     .map-area{
@@ -1293,6 +1312,24 @@ footer .top{
 
     .sectionTeam{
         max-width: 260px;
+    }
+
+    .tellAboutUs{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .tellAboutUs div:first-child{
+        margin: 0;
+        margin-bottom: 20px;
+    }
+
+    .tellAboutUs div:last-child span{
+        display: none;
+    }
+
+    .contactUs form{
+        width: 100%;
     }
 
     #map{
